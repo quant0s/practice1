@@ -162,16 +162,16 @@ void task13()
 
 void task14()
 {
-  int num = 1, sum = 0;
+  int num = 1;
+  printf("Числа от 1 до 100, кратные 3 или 5: ");
   while (num != 101)
   {
-    if (num % 3 == 0 && num % 5 == 0)
+    if (num % 3 == 0 || num % 5 == 0)
     {
-      sum += num;
+      printf("%d ", num);
     }
     num++;
   }
-  printf("Сумма чисел от 1 до %d, кратных 3 и 5 равна %d", num-1, sum);
 }
 
 void task15()
